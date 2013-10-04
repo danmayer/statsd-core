@@ -6,5 +6,5 @@
  * My first docker image. Enjoy!
  * bosky101
  */
-{"graphitePort": 2003, "graphiteHost": "utils.picoappz.com", "port": 8125}
+{"graphitePort": 2003, "graphiteHost": "localhost", "port": 8125}
 
