@@ -15,7 +15,7 @@ ADD Done.md /data/docker-statsd-README.md
 EXPOSE 8125:8125/udp
 EXPOSE 8126:8126
 
-RUN sed -i 's/localhost/`hostname`/g' /data/config.js
+RUN sed -i "s/localhost/$HOSTNAME/g" /data/config.js
 
 RUN cat /data/config.js
 RUN cat /data/docker-statsd-README.md
