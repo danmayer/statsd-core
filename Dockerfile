@@ -15,6 +15,8 @@ ADD Done.md /data/docker-statsd-README.md
 EXPOSE 8125:8125/udp
 EXPOSE 8126:8126
 
+# this means docker must have the host name passed in
+# ie: docker run -h 'utils.mysite.com' -i -t ubuntu /bin/bash
 RUN sed -i "s/localhost/$HOSTNAME/g" /data/config.js
 
 RUN cat /data/config.js
